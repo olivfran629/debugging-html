@@ -1,26 +1,36 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <meta charset="utf-8">
 
     <title>HTML debugging examples</title>
 
-    <!--[if lt IE 9]>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
-    <![endif]-->
   </head>
 
   <body>
     <h1>HTML debugging examples</h1>
-
+	<!-- don't forget to comment and indent code for readability -->
+	
     <p>What causes errors in HTML?</p>
+	<h2>Browsers are kind</h2>
+	<p>They may assume the best, but you want your code to work well across all browsers, avoid bugs that may pile up, and to be readable. You want to be professional, so don't forget to run your html validation - e.g., through the <a href="https://validator.w3.org">W3 Validator</a> tool
 
     <ul>
       <li>Unclosed elements: If an element is <strong>not closed properly</strong>, then its effect can spread to areas you didn't intend</li>
 
-      <li>Badly nested elements: Nesting elements properly is also very important for code behaving correctly. <strong>strong <em>strong emphasised?</em></strong> what is this?</li>
+      <li>Badly nested elements: Nesting elements properly is also very important for code behaving correctly. <strong>strong </strong> <em>emphasised?</em> what is this?</li>
 
       <li>Unclosed attributes: Another common source of HTML problems. Let's look at an example: <a href="https://www.mozilla.org/">link to Mozilla homepage</a></li>
     </ul>
+	<p>If you use information in a spot where the html expects emptiness, you will see a validation error:
+	<ol>
+		<li>Misspellings and quotes (or lack thereof) can be a problem</li>
+		<li>Images must have an alt text attribute <a title="Nicholas A. Tonelli from Pennsylvania, USA [CC BY 2.0 (https://creativecommons.org/licenses/by/2.0)], via Wikimedia Commons" href="https://commons.wikimedia.org/wiki/File:Flickr_-_Nicholas_T_-_Filter_Test_(2).jpg"><img src="../test.jpg" alt="this is alt text for this image">
+		</a>
+		</li>
+		<li>Did your page have a proper beginning - Doctype declaration, head with title?</li>
+		<li>For images and html to work, pay attention to file extensions, file locations, and things such as quotation mark encoding (don't use "curly quotes" which come from word processing programs - so basically, you can use Notepad or Notepad++ (or an IDE) but do not use Microsoft Word or something similar to that - do not save as .rtf)</li>
+		<li>An improvement to use of specific characters, such as semicolons, is to use their equivalents, e.g., <code>&nbsp;</code> for an ampersand</li>
+	</ol>
   </body>
 </html>
