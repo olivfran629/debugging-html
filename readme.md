@@ -1,4 +1,4 @@
-Exercise on HTML debugging (with git practice, too) per https://github.com/mdn/learning-area/blob/master/html/introduction-to-html/debugging-html/debug-example.html:
+Exercise on HTML debugging (with git practice, too) based on original learning via Mozilla Developer Network (MDN) https://github.com/mdn/learning-area/blob/master/html/introduction-to-html/debugging-html/debug-example.html:
 * Fork this git repository to your own github account for debugging practice (https://github.com/ccsu-te350/debugging-html)
 * Use git to clone down the forked repository to a directory on your local machine
 * Find the debugging html section (open and work with debug-example.html)
